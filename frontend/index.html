@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Animal Type Classification</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>Animal Type Classification</h1>
+
+            <p class="subtitle">
+                Identify whether the animal is a Cattle or Buffalo
+            </p>
+
+            <div class="upload-section">
+
+                <label for="imageInput" class="upload-button">
+                    Choose Animal Image
+                </label>
+
+                <input
+                    type="file"
+                    id="imageInput"
+                    accept="image/jpeg, image/png, image/webp"
+                    hidden
+                >
+
+                <p id="fileName">
+                    No image selected
+                </p>
+
+            </div>
+
+            <div class="preview-container">
+                <img
+                    id="preview"
+                    src=""
+                    alt="Image Preview"
+                >
+            </div>
+
+            <button id="predictButton">
+                Predict Animal
+            </button>
+
+            <div id="loading" class="loading">
+                Predicting...
+            </div>
+
+            <div id="result" class="result">
+
+                <h2>Prediction Result</h2>
+
+                <p>
+                    Animal:
+                    <span id="prediction">-</span>
+                </p>
+
+                <p>
+                    Confidence:
+                    <span id="confidence">-</span>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+  <script src="/static/script.js"></script>
+
+</body>
+</html>

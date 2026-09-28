@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+
+# Dataset
+dataset/
+
+# Uploaded test images
+uploads/*
+
+# TensorFlow / Keras
+*.h5
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+
